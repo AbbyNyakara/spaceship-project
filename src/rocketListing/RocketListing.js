@@ -7,6 +7,7 @@ function RocketListing() {
 
   const rockets = useSelector(getAllRockets)
   console.log(rockets)
+
   const displayRockets = rockets.map((rocket) => {
     return (
       <div className='rocket_listing' key={rocket.id}>
@@ -17,7 +18,7 @@ function RocketListing() {
         <div className='rocket_details'>
           <h2>{rocket.rocket_name}</h2>
           <p>{rocket.description}</p>
-          <button>Reserve Rocket</button>
+          <button className='reserve_rocket'>Reserve Rocket</button>
         </div>
       </div>
     )

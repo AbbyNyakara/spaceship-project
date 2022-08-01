@@ -1,4 +1,30 @@
+.rocket_listing {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
 .rocket_image {
   width: 200px;
   height: 200px;
+}
+
+.rocket_details {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.rocket_details h2 {
+  padding-bottom: 10px;
+}
+
+.rocket_details p {
+  padding-bottom: 10px;
+}
+
+.reserve_rocket {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #8787e9;
+  border: none;
+  border-radius: 5px;
 }
