@@ -10,22 +10,21 @@ import Rockets from './components/Rockets';
 import { fetchMissions } from './redux/Missions';
 
 function App() {
-
-  const state = useSelector((state) => state);
+  const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
   useEffect(() => async () => {
     await dispatch(fetchMissions());
-  }, []);
+  }, [dispatch]);
+  
   return (
     <BrowserRouter>
     <Header />
       <Routes>
         <Route path="/" element={<Rockets />}></Route>
-        <Route path="/missions" element={<Missions MissionList={state.missions}/>}></Route>
+        <Route path="/missions" element={<Missions MissionList={missions}/>}></Route>
         <Route path="/profile" element={<MyProfile />}></Route>
       </Routes>
     </BrowserRouter>
-
   );
 }
 
