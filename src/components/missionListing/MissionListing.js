@@ -1,6 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+<<<<<<< HEAD
 import { getAllMissions } from '../../redux/rocketSlice'
+=======
+import { getAllMissions } from '../../features/rocketSlice'
+>>>>>>> develop
 import './MissionListing.scss'
 
 function MissionListing() {
