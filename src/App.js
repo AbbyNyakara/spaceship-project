@@ -16,7 +16,6 @@ function App() {
   useEffect(() => async () => {
     await dispatch(fetchMissions());
   }, []);
-
   return (
     <BrowserRouter>
     <Header />

@@ -1,14 +1,14 @@
 const URL = 'https://api.spacexdata.com/v3/missions';
-const fetch = 'MISSIONS_FETCHED';
+const getMissions = 'MISSIONS_FETCHED';
 
 export const missionsDisplayed = (missions) => ({
-    type: fetch,
-   missions,
+    type: getMissions,
+    missions,
 })
 
 export const missionReducer = (state = [], action) => {
     switch(action.type) {
-        case fetch:
+        case getMissions:
             return action.missions;
         default: 
             return state;
