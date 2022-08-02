@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchAsyncRockets } from '../features/rocketSlice';
+import { fetchAsyncRockets } from '../../features/rocketSlice';
 import RocketListing from '../rocketListing/RocketListing';
 
 function Rockets() {
@@ -10,7 +10,6 @@ function Rockets() {
   useEffect(() => {
     dispatch(fetchAsyncRockets())
   }, [dispatch])
-  
 
   return (
     <div>

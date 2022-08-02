@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Header from './header/Header';
-import Rockets from './rockets/Rockets';
-import Missions from './missions/Missions';
-import Profile from './profile/Profile';
+import Header from './components/header/Header';
+import Rockets from './components/rockets/Rockets';
+import Missions from './components/missions/Missions';
+import Profile from './components/profile/Profile';
 import './App.css'
 
 function App() {

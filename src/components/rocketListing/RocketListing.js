@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import { getAllRockets } from '../features/rocketSlice'
+import { getAllRockets } from '../../features/rocketSlice'
 import './RocketListing.scss'
 
 function RocketListing() {
@@ -23,6 +23,7 @@ function RocketListing() {
       </div>
     )
   })
+
 
   return (
     <div>{displayRockets}</div>
