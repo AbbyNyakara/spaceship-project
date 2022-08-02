@@ -1,8 +1,10 @@
+
 import Mission from "./Mission";
 
 
 const Missions = (props) => {
     const { MissionList } = props;
+
     return (
         <section>
             <h3>Mission</h3>

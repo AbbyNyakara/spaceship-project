@@ -8,10 +8,16 @@ const slice = createSlice({
     getMissions(state, action) {
       return action.payload;
     },
+    joinMission(state, action) {
+      const Reserved = state.filter((mission) => {
+        return action.payload.mission_id === mission.missions_id
+      })
+      return Reserved
+    },
   },
 });
 
-export const { getMissions } = slice.actions;
+export const { getMissions, joinMission } = slice.actions;
 
 export default slice.reducer;
 
