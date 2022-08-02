@@ -4,7 +4,7 @@ import Header from './components/header/Header';
 import Rockets from './components/rockets/Rockets';
 import Missions from './components/missions/Missions';
 import Profile from './components/profile/Profile';
-import './App.css'
+import './App.css';
 
 function App() {
   return (
