@@ -1,19 +1,16 @@
 import React from 'react'
-import { displayReserved } from "../../redux/Missions";
-import { useDispatch } from "react-redux";
-import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 
 
-function Profile(props) {
-  const dispatch = useDispatch();
-  const reservedList = dispatch(displayReserved());
+function Profile() {
+  const missions = useSelector((state) => state.missions);
 
   return (
     <div>
       <h3>My Missions</h3>
       <ul>
-        {reservedList.forEach((mission) => {
-          return <li>{mission.mission_name}</li>
+        {missions.filter((mission=>mission.reserved === true)).map((mission) => {
+          return <li key={mission.mission_id}>{mission.mission_name}</li>
         })
         }
       </ul>

@@ -9,16 +9,14 @@ const slice = createSlice({
       return action.payload;
     },
     joinMission(state, action) {
-      const Reserved = state.filter((mission) => {
-        return action.payload.mission_id === mission.missions_id
+      state = state.map(mission=>{
+        if (mission.mission_id === action.payload) {
+          mission.reserved ? mission.reserved=false : mission.reserved = true;
+          return mission;
+        }
+        else
+          return mission;
       })
-      return Reserved
-    },
-    displayReserved(state, action) {
-      const reservedList = state.filter((mission) => {
-        return mission.reserved === true
-      })
-      return console.log(reservedList)
     },
   },
 });

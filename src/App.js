@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Header from './components/header/Header';
 import Missions from './components/Missions';
@@ -9,7 +9,6 @@ import { fetchMissions } from './redux/Missions';
 import './App.css'
 
 function App() {
-  const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
   useEffect(() => async () => {
     await dispatch(fetchMissions());
@@ -22,8 +21,8 @@ function App() {
       <div className='container'>
       <Routes>
         <Route path='/' element={<Rockets />}/>
-        <Route path="/missions" element={<Missions MissionList={missions}/>}></Route>
-        <Route path='/profile' element={<Profile ReservedMissions={missions}/>}/>
+        <Route path="/missions" element={<Missions />}></Route>
+        <Route path='/profile' element={<Profile />}/>
       </Routes>
       </div>
     </Router>
