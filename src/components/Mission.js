@@ -8,10 +8,18 @@ const Mission = (props) => {
     const [Reserved, setReserved] = useState(props);
     
     const handleJoinMission = (e) => {
+        if (e.target.textContent === 'Join Mission') {
+            setReserved({
+                ...Reserved,
+                reserved: true,
+            })    
+        } else {
         setReserved({
-            ...Reserved,
-            reserved: true,
+            mission_id,
+            mission_name, 
+            description, 
         })
+    }
         dispatch(joinMission(mission_id))
     }
 
