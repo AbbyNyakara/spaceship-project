@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Rockets />}/>
         <Route path="/missions" element={<Missions MissionList={missions}/>}></Route>
-        <Route path='/profile' element={<Profile />}/>
+        <Route path='/profile' element={<Profile ReservedMissions={missions}/>}/>
       </Routes>
       </div>
     </Router>

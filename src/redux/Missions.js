@@ -14,10 +14,16 @@ const slice = createSlice({
       })
       return Reserved
     },
+    displayReserved(state, action) {
+      const reservedList = state.filter((mission) => {
+        return mission.reserved === true
+      })
+      return console.log(reservedList)
+    },
   },
 });
 
-export const { getMissions, joinMission } = slice.actions;
+export const { getMissions, joinMission, displayReserved } = slice.actions;
 
 export default slice.reducer;
 
