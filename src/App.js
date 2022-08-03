@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Header from './components/Header';
+import Header from './components/header/Header';
 import Missions from './components/Missions';
 import Rockets from './components/rockets/Rockets';
 import Profile from './components/profile/Profile';

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import './Header.scss';
+import Navigation from '../Navigation';
 
 function Header() {
   return (
@@ -18,10 +19,8 @@ function Header() {
       </div>
 
       {/* Nav section  */}
-      <div className="navbar">
-        <p className='nav-link'><Link className='links' to='/'>Rockets</Link></p>
-        <p className='nav-link'><Link className='links' to='/missions'>Missions</Link></p>
-        <p className='nav-link'><Link className='links' to='/profile'>My Profile</Link></p>
+      <div>
+        <Navigation />     
       </div>
     </div>  
   )
