@@ -7,7 +7,7 @@ const Mission = (props) => {
     const dispatch = useDispatch();
     const [Reserved, setReserved] = useState(props);
     
-    const handleJoinMission = () => {
+    const handleJoinMission = (e) => {
         setReserved({
             ...Reserved,
             reserved: true,
@@ -20,7 +20,7 @@ const Mission = (props) => {
             <h3>{mission_name}</h3>
             <p>{description}</p>
             <p></p>
-            <button onClick={handleJoinMission}>Reserve</button>
+            <button onClick={handleJoinMission}>{Reserved.hasOwnProperty('reserved') ? 'Leave Mission' : 'Join Mission'}</button>
         </div>
     )
 }
