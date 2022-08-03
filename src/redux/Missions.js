@@ -9,15 +9,19 @@ const slice = createSlice({
       return action.payload;
     },
     joinMission(state, action) {
-      const Reserved = state.filter((mission) => {
-        return action.payload.mission_id === mission.missions_id
+      state = state.map(mission=>{
+        if (mission.mission_id === action.payload) {
+          mission.reserved ? mission.reserved=false : mission.reserved = true;
+          return mission;
+        }
+        else
+          return mission;
       })
-      return Reserved
     },
   },
 });
 
-export const { getMissions, joinMission } = slice.actions;
+export const { getMissions, joinMission, displayReserved } = slice.actions;
 
 export default slice.reducer;
 
