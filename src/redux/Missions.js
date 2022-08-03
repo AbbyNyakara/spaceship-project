@@ -6,7 +6,7 @@ const slice = createSlice({
   initialState: [],
   reducers: {
     getMissions(state, action) {
-      return action.payload;
+      return action.payload; 
     },
     joinMission(state, action) {
       state = state.map(mission=>{

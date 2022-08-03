@@ -25,15 +25,9 @@ const rocketSlice = createSlice({
     },
   },
   extraReducers: {
-    [fetchAsyncRockets.pending]: () => {
-      console.log("pending")
-    },
     [fetchAsyncRockets.fulfilled]: (state, {payload}) => {
       console.log("Fulfilled");
       return {...state, rockets: payload}
-    },
-    [fetchAsyncRockets.rejected]: () => {
-      console.log("Rejected");
     },
     [fetchAsyncMissions.fulfilled]: (state, {payload}) => {
       console.log("Fulfilled");
