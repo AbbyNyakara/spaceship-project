@@ -12,7 +12,7 @@ const Mission = (props) => {
     <div>
       <h3>{mission_name}</h3>
       <p>{description}</p>
-      <p></p>
+      <p>{reserved ? "Active Member" : "NOT A MEMBER"}</p>
       <button onClick={handleJoinMission}>
         {reserved ? "Leave Mission" : "Join Mission"}
       </button>
