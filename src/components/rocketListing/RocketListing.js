@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import { getAllRockets } from '../../features/rocketSlice'
+import { getAllRockets } from '../../redux/rocketSlice'
 import './RocketListing.scss'
 
 function RocketListing() {
