@@ -4,7 +4,7 @@ import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import store from '../Redux/configureStore';
-import Missions from '../Components/Missions';
+import Missions from '../components/Missions';
 
 it('Missions Component snapshot test', () => {
   const missionsRender = TestRenderer

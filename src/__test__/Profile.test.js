@@ -4,7 +4,7 @@ import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import store from '../Redux/configureStore';
-import Profile from '../Components/Profile';
+import Profile from '../components/Profile';
 
 it('Missions Component snapshot test', () => {
   const profileRender = TestRenderer.create(
