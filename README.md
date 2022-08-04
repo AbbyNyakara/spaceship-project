@@ -15,7 +15,7 @@
 
 To get a local copy up and running follow these simple steps.
 
-- Clone the project `$ git clone https://github.com/`
+- Clone the project `$ git clone https://github.com/AbbyNyakara/spaceship-project.git`
 - Open your project in VS code of any text editor of your choice.
 - Install node modules by running `npm install`
 - you can bulid the project `npm build` and run it using the browser or live server or you can run it using `npm start`.
@@ -23,10 +23,10 @@ To get a local copy up and running follow these simple steps.
 ## Authors
 
 👤 **Abby Nyakara**
-
+- Github[Abby Nyakara](https://github.com/AbbyNyakara)
 
 👤 **Nadezhda Levina**
-
+- Gituhub[Nadia Levina](https://github.com/petushka1)
 
 ## 🤝 Contributing
 
