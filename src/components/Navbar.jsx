@@ -13,9 +13,9 @@ const Navbar = () => {
           <h1>Space Travelers&apos; Hub</h1>
         </div>
         <ul>
-          <NavLink style={navLinkStyle} to="/Rockets">Rockets</NavLink>
+          <NavLink style={navLinkStyle} to="/">Rockets</NavLink>
           <NavLink style={navLinkStyle} to="/Missions">Missions</NavLink>
-          <NavLink style={navLinkStyle} to="/">My Profile</NavLink>
+          <NavLink style={navLinkStyle} to="/Profile">My Profile</NavLink>
         </ul>
       </div>
     </nav>

@@ -19,9 +19,9 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Profile />} />
-        <Route path="Missions" element={<Missions />} />
-        <Route path="Rockets" element={<Rockets />} />
+        <Route path="/" element={<Rockets />} />
+        <Route path="/Missions" element={<Missions />} />
+        <Route path="/Profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
