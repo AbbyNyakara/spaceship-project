@@ -10,7 +10,7 @@ const baseUrl = 'https://api.spacexdata.com/v3/missions';
 // create ASYNC Thunks
 export const loadMissionsThunk = createAsyncThunk(LOAD_MISSIONS, async () => {
   // fetch Misisons
-  const response = await axios.get(`${baseUrl}`)
+  const response = await axios.get(`${baseUrl}`);
   const res = response.data;
   return res;
 });
