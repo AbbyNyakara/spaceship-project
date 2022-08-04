@@ -13,6 +13,7 @@ A web application for a company that provides commercial and scientific space tr
 - babel
 
 ## Getting Started
+
 To get a copy of this project running on your local computer, do the followings:
 
 ### Prerequisites
@@ -52,6 +53,7 @@ Open _Terminal/Shell_ inside your _Project_ and run
 - GitHub: [@petushka1](https://github.com/petushka1)
 
 ## :handshake: Contributing
+
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
