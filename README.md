@@ -1,38 +1,62 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Space Travelers' Hub Project
-
-> An application by a company that provide space travel services. It allows users to book rockets and join space missions.
-
+# Space Travelers' Hub
+A web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
 ## Built With
-
-- HTML, CSS , Javascript
-- React, Redux frameworks
-
+- React
+- Redux
+- JavaScript
+- SASS
+- React Testing Library
+- Node.js
+- npm
+- webpack
+- babel
 
 ## Getting Started
+To get a copy of this project running on your local computer, do the followings:
 
-To get a local copy up and running follow these simple steps.
+### Prerequisites
+- Must have a working computer
+- A Web-Browser installed (Chrome - Recommended)
 
-- Clone the project `$ git clone https://github.com/`
-- Open your project in VS code of any text editor of your choice.
-- Install node modules by running `npm install`
-- you can bulid the project `npm build` and run it using the browser or live server or you can run it using `npm start`.
+### Setup
+- Install a text Editor. For example [_VS_](https://visualstudio.microsoft.com/)
+- Clone this project repository on your local computer. [link](https://github.com/AbbyNyakara/spaceship-project.git)
+- Open the project directory with _Text Editor_
 
-## Authors
+### Install
+Open _Terminal/Shell_ inside your _Project_ and run
+  ```
+    npm install --force
+  ```
+### Getting Started with Create React App
+  This project was bootstrapped with [Create React-Resux App](https://github.com/reduxjs/cra-template-redux).
+  ```
+    npm start
+  ```
+### Run tests
+- For _style_ tests, run
+  ```
+    npx stylelint "**/*.{css,scss}"
+  ```
+- For _eslint_ tests, run
+  ```
+    npx eslint .
+  ```
+## Author
+:bust_in_silhouette: **Abby**
+- GitHub: [@pAbbyNyakara](https://github.com/AbbyNyakara)
 
-👤 **Abby Nyakara**
+## Contributor
+:bust_in_silhouette: **Nadia**
+- GitHub: [@petushka1](https://github.com/petushka1)
 
-
-👤 **Nadezhda Levina**
-
+## :handshake: Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
-
-Give a ⭐️ if you like this project!
+Give a :star:️ if you like this project!
 
 ## Acknowledgments
-
-- Microverse
-
+- Fellow Micronauts
