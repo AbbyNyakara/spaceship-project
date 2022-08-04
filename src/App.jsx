@@ -3,10 +3,10 @@ import { useDispatch } from 'react-redux/es/exports';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { loadRocketsThunk } from './Redux/Rockets/Rockets';
 import { loadMissionsThunk } from './Redux/Missions/Missions';
-import Navbar from './Components/Navbar';
-import Profile from './Components/Profile';
-import Missions from './Components/Missions';
-import Rockets from './Components/Rockets';
+import Navbar from './components/Navbar';
+import Profile from './components/Profile';
+import Missions from './components/Missions';
+import Rockets from './components/Rockets';
 
 const App = () => {
   const dispatch = useDispatch();
