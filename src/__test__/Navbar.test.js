@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import Navbar from '../Components/Navbar';
