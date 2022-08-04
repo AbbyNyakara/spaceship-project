@@ -1,33 +1,30 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Header from './components/header/Header';
-import Missions from './components/Missions';
-import Rockets from './components/rockets/Rockets';
-import Profile from './components/profile/Profile';
-import { fetchMissions } from './redux/Missions';
-import './App.css'
+import { useDispatch } from 'react-redux/es/exports';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { loadRocketsThunk } from './Redux/Rockets/Rockets';
+import { loadMissionsThunk } from './Redux/Missions/Missions';
+import Navbar from './Components/Navbar';
+import Profile from './Components/Profile';
+import Missions from './Components/Missions';
+import Rockets from './Components/Rockets';
 
-function App() {
+const App = () => {
   const dispatch = useDispatch();
-  useEffect(() => async () => {
-    await dispatch(fetchMissions());
-  }, [dispatch]);
-  
-  return (
-    <div>
-    <Router>
-    <Header />
-      <div className='container'>
-      <Routes>
-        <Route path='/' element={<Rockets />}/>
-        <Route path="/missions" element={<Missions />}></Route>
-        <Route path='/profile' element={<Profile />}/>
-      </Routes>
-      </div>
-    </Router>
-    </div>
-  )
-}
+  useEffect(() => {
+    dispatch(loadRocketsThunk());
+    dispatch(loadMissionsThunk());
+  }, []);
 
-export default App
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Profile />} />
+        <Route path="Missions" element={<Missions />} />
+        <Route path="Rockets" element={<Rockets />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;
