@@ -47,7 +47,6 @@ const Missions = () => {
                     </button>
                   )}
                 </td>
-
               </tr>
             ))}
           </tbody>

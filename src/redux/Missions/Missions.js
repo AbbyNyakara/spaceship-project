@@ -2,7 +2,7 @@ import axios from 'axios';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 // Actions
-const LOAD_MISSIONS = 'spacex-project-solo/rockets/LOAD_MISSIONS';
+const LOAD_MISSIONS = 'spacex-project/rockets/LOAD_MISSIONS';
 
 // Url
 const baseUrl = 'https://api.spacexdata.com/v3/missions';
@@ -10,15 +10,13 @@ const baseUrl = 'https://api.spacexdata.com/v3/missions';
 // create ASYNC Thunks
 export const loadMissionsThunk = createAsyncThunk(LOAD_MISSIONS, async () => {
   // fetch Misisons
-  const response = await axios.get(`${baseUrl}`).catch((err) => {
-    console.log('Error', err);
-  });
+  const response = await axios.get(`${baseUrl}`)
   const res = response.data;
   return res;
 });
 
 const missionsSlice = createSlice({
-  name: 'spacex-project-solo/missions',
+  name: 'spacex-project/missions',
   initialState: [],
   reducers: {
     joinAction(state, action) {
