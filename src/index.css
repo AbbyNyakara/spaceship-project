@@ -1,0 +1,11 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.missions {
+  height: 100vh;
+}
+
+.container {
+  padding: 10px 40px;
+}
